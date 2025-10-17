@@ -31,147 +31,164 @@ The TypeScript SDK doesn't need a separate client class because:
 https://github.com/anthropics/claude-agent-sdk-typescript/issues/31
 
 # Simple
+
 ```sh
 $ pnpm tsx 00_research_agent/simple.ts
+
 🤖 Thinking...
-🤖 Using: WebSearch()
+🤖 Using: WebSearch({"query":"AI agents latest trends 2024 2025 autonomous artificial intelligence"})
+✓ Tool completed
+🤖 Thinking...
+🤖 Using: WebSearch({"query":"\"AI agents\" \"agentic AI\" latest developments January 2025 multi-agent systems"})
 ✓ Tool completed
 🤖 Thinking...
 
 📝 Final Result:
-Based on my research, here's a brief summary of the latest trends in AI agents:
+## Brief Summary: Latest AI Agent Trends (2024-2025)
 
-## Key Trends in AI Agents (2024-2025)
+Based on my research, here are the key trends shaping AI agents right now:
 
-### 🚀 **Explosive Market Growth**
-- The agentic AI market is projected to grow at 56.1% CAGR, reaching $10.41 billion in 2025
-- 99% of enterprise developers are exploring or developing AI agents
+### **🚀 Explosive Market Growth**
+- The agentic AI market is experiencing dramatic growth with a 56.1% CAGR, reaching $10.41 billion in 2025
 - 82% of organizations plan to integrate AI agents by 2026
+- 99% of enterprise developers are exploring AI agent development
 
-### 🔄 **Evolution Beyond Chatbots**
-- **2024**: Transition from simple chatbots to autonomous agents capable of complex tasks
-- **2025**: Expected to be "the year of the agent" with widespread enterprise adoption
-- Focus shifting from Q&A interfaces to task-executing autonomous systems
+### **🤝 Multi-Agent Collaboration**
+- Major shift from single agents to **multi-agent systems** that work together
+- Microsoft launched Agent Framework in public preview, merging AutoGen and Semantic Kernel
+- Emphasis on agent orchestration and coordination for complex tasks
 
-### 🤝 **Multi-Agent Collaboration**
-- Rise of multi-agent systems where multiple AI agents work together
-- Platforms like OpenAI Swarm and Microsoft's Magentic AI enabling agent orchestration
-- True multiagent networks being piloted in late 2024
+### **🎯 Specialization Over Generalization**
+- Move away from general-purpose agents toward **specialized vertical agents**
+- Focus areas: coding, sales, security, research, customer service
+- Industry-specific solutions gaining traction in healthcare, finance, and cybersecurity
 
-### 🏢 **Enterprise Integration**
-- Major vendors launching agent platforms: Salesforce Agentforce, Microsoft Copilot agents
-- 90% of Fortune 500 companies using Microsoft Copilot Studio for AI agents
-- Primary applications: email generation, coding, data analysis, customer service
+### **🧠 Enhanced Autonomy & Reasoning**
+- AI agents becoming more independent with advanced reasoning capabilities
+- Integration of multimodal capabilities (text, voice, vision)
+- By 2029, predicted to autonomously resolve 80% of customer service issues
 
-### ⚖️ **Reality Check**
-While promising, current limitations include:
-- **Accuracy issues**: Current agents resolve only ~14% of real-world coding issues autonomously
-- **Trust gap**: Enterprises hesitant to deploy fully autonomous agents
-- **Human oversight**: Still required for most complex tasks
+### **🎙️ Voice & Conversational Interfaces**
+- Sophisticated voice agents that understand tone, sentiment, and urgency
+- More natural, conversational interactions replacing traditional interfaces
 
-### 🔮 **Future Outlook**
-- **By 2029**: Predicted to autonomously handle 80% of customer service issues
-- **5-10 years**: Expected timeline for autonomous agents to reach full productivity
-- **Emerging applications**: Software development, IoT integration, self-healing systems
+### **⚖️ Governance & Human Oversight**
+- Growing emphasis on security, compliance, and ethical AI governance
+- Human oversight remains critical despite increased autonomy
+- NIST guidance defining security frameworks for agent systems
 
-The consensus is that 2024 established AI agents as viable technology, while 2025 will see broader adoption for specific use cases, though full autonomy remains a longer-term goal.
+### **💼 Enterprise-Ready Frameworks**
+- Popular platforms: CrewAI, AutoGen, LangChain, Microsoft Agent Framework
+- Focus on enterprise-grade features: observability, durability, compliance
+- Built-in tools for monitoring and managing agent behavior
 
-📊 Cost: $0.11
-⏱️  Duration: 44.43s
+**Bottom line:** 2025 is being called the "year of the AI agent" with the technology maturing from research concepts into production-ready, autonomous systems that can collaborate, reason, and execute complex workflows independently while maintaining appropriate human oversight.
+
+📊 Cost: $0.20
+⏱️  Duration: 82.48s
 
 ============================================================
 🤖 AGENT CONVERSATION TIMELINE
 ============================================================
 
 ⚙️  System Initialized
-   Session: 39c735f7...
+   Session: d802dc60...
 
 🤖 Assistant:
    💬 I'll research the latest trends in AI agents for you. Let me search for current information on this topic.
 
 🤖 Assistant:
    🔧 Using tool: WebSearch
-      Query: "AI agents trends 2024 2025 latest developments autonomous agents"
+      Input: {"query":"AI agents latest trends 2024 2025 autonomous artificial intelligence"}
 
 👤 Tool Result Received
    ID: toolu_01...
-   📥 Web search results for query: "AI agents trends 2024 2025 latest developments autonomous agents"
+   📥 Web search results for query: "AI agents latest trends 2024 2025 autonomous artificial intelligence"
 
-Links: [{"title":"AI Agents in 2025: Expectations vs. Reality | IBM","url":"https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality"},{"title":"Autonomous generative AI agents: Under development","url":"https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html"},{"title":"To...
+Links: [{"title":"Top 10 AI Agent Trends and Predictions for 2025","url":"https://www.analyticsvidhya.com/blog/2024/12/ai-agent-trends/"},{"title":"AI Agents in 2025: Expectations vs. Reality | IBM","url":"https://www.ibm.com/think/insights/ai-agents-2025-expectations-vs-reality"},{"title":"AI Agents Trends in 2025 | The Future of Intelligent Agents in AI","url":"https://www.vinsys.com/blog/ai-a...
 
 🤖 Assistant:
-   💬 Based on my research, here's a brief summary of the latest trends in AI agents:
+   💬 Let me get some additional perspectives on the latest AI agent developments:
 
-## Key Trends in AI Agents (2024-2025)
+🤖 Assistant:
+   🔧 Using tool: WebSearch
+      Input: {"query":"\"AI agents\" \"agentic AI\" latest developments January 2025 multi-agent systems"}
 
-### 🚀 **Explosive Market Growth**
-- The agentic AI market is projected to grow at 56.1% CAGR, reaching $10.41 billion in 2025
-- 99% of enterprise developers are exploring or developing AI agents
+👤 Tool Result Received
+   ID: toolu_01...
+   📥 Web search results for query: ""AI agents" "agentic AI" latest developments January 2025 multi-agent systems"
+
+Links: [{"title":"Developments in AI Agents: Q1 2025 Landscape Analysis — The Science of Machine Learning & AI","url":"https://www.ml-science.com/blog/2025/4/17/developments-in-ai-agents-q1-2025-landscape-analysis"},{"title":"Top 5 Agentic AI Trends in 2025: From Multi-Agent Collaboration to Self-Healing Systems - SuperAGI","url":"https://superagi.com/top-5-agentic-ai-trends-in-2025-fro...
+
+🤖 Assistant:
+   💬 ## Brief Summary: Latest AI Agent Trends (2024-2025)
+
+Based on my research, here are the key trends shaping AI agents right now:
+
+### **🚀 Explosive Market Growth**
+- The agentic AI market is experiencing dramatic growth with a 56.1% CAGR, reaching $10.41 billion in 2025
 - 82% of organizations plan to integrate AI agents by 2026
+- 99% of enterprise developers are exploring AI agent development
 
-### 🔄 **Evolution Beyond Chatbots**
-- **2024**: Transition from simple chatbots to autonomous agents capable of complex ta...
+### **🤝 Multi-Agent Collaboration**
+- Major shift from single agents to **multi-agent systems** that ...
 
 ✅ Conversation Complete
-   Turns: 4
-   Cost: $0.11
-   Duration: 44.43s
-   Tokens: 597
+   Turns: 7
+   Cost: $0.20
+   Duration: 82.48s
+   Tokens: 692
 
 ============================================================
 ```
 
-# Advanced
+# Advanced 
 
 ```sh
-$ pnpm tsx 00_research_agent/advanced.ts
+pnpm tsx 00_research_agent/advanced.ts
+
 🤖 Thinking...
-🤖 Using: Read()
+🤖 Using: Read({"file_path":"projects_claude.png"})
 ✓ Tool completed
 🤖 Thinking...
-🤖 Using: WebSearch()
+🤖 Using: WebSearch({"query":"Claude Code vs Claude.ai usage patterns startup work personal projects enterprise differences 2024"})
 ✓ Tool completed
 🤖 Thinking...
 
 📝 Final Result:
-## Key Insights from Chart Analysis and Research
+## Key Insights from the Chart Analysis and Research
 
-Based on the chart data and web search findings, here are the main insights:
+Based on the chart data and web search findings, here are the main insights about Claude usage patterns:
 
-### **Why Claude Code Dominates Startup Work (32.9% vs 13.1%)**
+### 1. **Claude Code's Dominance in Development-Heavy Contexts**
+The chart shows Claude Code leading significantly in:
+- **Startup Work** (32.9% vs 13.1%) - This aligns with research showing Claude Code's effectiveness for rapid prototyping and MVP development
+- **Personal Projects** (36.0% vs 30.2%) - Matches findings that developers prefer Claude Code's terminal-driven automation for personal coding projects
 
-1. **Professional Development Focus**: Claude Code is specifically designed for serious coding workflows with features like:
-   - Direct integration with development environments (VS Code, JetBrains)
-   - Ability to see entire project structures and modify codebases
-   - Automated testing and GitHub integration
-   - Superior performance on complex, multi-file projects
+### 2. **Claude.ai's Strength in Learning and Research**
+The chart reveals Claude.ai's preference for:
+- **Academic Research** (11.9% vs 2.2%)
+- **Tutorial/Learning** (12.2% vs 0.7%)
+- **Coursework** (4.9% vs 0.4%)
 
-2. **Startup Requirements**: Startups typically need:
-   - Production-ready code quality
-   - Large codebase management
-   - Professional development workflows
-   - Enterprise-level debugging and refactoring capabilities
+This reflects Claude.ai's versatility as an "all-rounder" study buddy and assistant, with features like larger context windows (200K+ tokens) that can handle extensive documents and complex explanations.
 
-### **Why Claude.ai Leads in Academic Research and Learning**
+### 3. **Enterprise Equilibrium**
+Both platforms show similar usage in **Enterprise Work** (25.9% vs 23.8%), which makes sense given that:
+- Enterprise customers often get bundled access to both Claude and Claude Code
+- Different enterprise teams use different tools based on their specific needs
+- Companies report 2-10x development velocity improvements when using both tools strategically
 
-1. **Accessibility**: Claude.ai's web interface is more beginner-friendly and doesn't require technical setup
-2. **Educational Focus**: Better suited for explanations, research, and learning rather than production coding
-3. **Broader Use Cases**: More versatile for general research, writing, and analysis tasks beyond coding
+### 4. **The "Code vs. Chat" Divide**
+The data suggests a clear specialization pattern:
+- **Claude Code**: Preferred for hands-on development work (startups, personal projects)
+- **Claude.ai**: Preferred for knowledge work, learning, and research
 
-### **Personal Projects Balance**
+This aligns with the research finding that Claude Code excels at "terminal-driven, agentic automation" while Claude.ai serves as a versatile assistant for complex reasoning and explanations.
 
-The relatively even split (36% Claude Code vs 30.2% Claude.ai) suggests:
-- Personal projects vary widely in complexity
-- Some users prefer the simplicity of the web interface
-- Others want the advanced capabilities even for personal work
-
-### **Enterprise Work Similarity**
-
-The close percentages (25.9% vs 23.8%) indicate:
-- Both tools serve enterprise needs but in different ways                                                                                                             - Choice depends more on specific workflow requirements than general enterprise suitability
-
-This data reflects the fundamental difference: **Claude Code is optimized for professional development workflows**, while **Claude.ai serves as a more accessible, general-purpose AI assistant** that happens to include coding capabilities.
+### 5. **Market Positioning Success**
+The chart validates Anthropic's dual-platform strategy, with each tool finding its optimal use cases rather than cannibalizing each other's usage. The research shows this differentiation is intentional and effective for serving different developer workflows.
 
 📊 Cost: $0.12
-⏱️  Duration: 58.40s
+⏱️  Duration: 61.11s
 ```

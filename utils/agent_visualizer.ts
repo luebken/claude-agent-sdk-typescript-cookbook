@@ -4,7 +4,8 @@ export function printActivity(msg: any) {
     if (Array.isArray(content) && content.length > 0) {
       const firstBlock = content[0];
       if (firstBlock.type === "tool_use") {
-        console.log(`🤖 Using: ${firstBlock.name}()`);
+        const input = JSON.stringify(firstBlock.input)
+        console.log(`🤖 Using: ${firstBlock.name}(${input})`);
       } else {
         console.log("🤖 Thinking...");
       }
@@ -75,18 +76,10 @@ export function visualizeConversation(messages: any[]) {
             const toolName = block.name;
             console.log(`   🔧 Using tool: ${toolName}`);
 
-            // Show key parameters for certain tools
+            // Show complete input for all tool calls
             if (block.input) {
-              if (toolName === "WebSearch" && block.input.query) {
-                console.log(`      Query: "${block.input.query}"`);
-              } else if (toolName === "TodoWrite" && block.input.todos) {
-                const todos = block.input.todos;
-                const inProgress = todos.filter((t: any) => t.status === "in_progress");
-                const completed = todos.filter((t: any) => t.status === "completed");
-                console.log(
-                  `      📋 ${completed.length} completed, ${inProgress.length} in progress`
-                );
-              }
+              const inputStr = JSON.stringify(block.input);
+              console.log(`      Input: ${inputStr}`);
             }
           }
         }
